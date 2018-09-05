@@ -17,7 +17,8 @@ namespace 大实验
         public Form3()
         {
             InitializeComponent();
-            conn = new SqlConnection("server=.;database=COURSE;Trusted_Connection=Yes;Connect Timeout=90");//Connection对象:连接数据库
+            //conn = new SqlConnection("server=.;database=COURSE;Trusted_Connection=Yes;Connect Timeout=90");//Connection对象:连接数据库
+            conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;Database=COURSE;Trusted_Connection=Yes;Connect Timeout=3");//Connection对象:连接数据库
             conn.Open();//打开连接
         }
 

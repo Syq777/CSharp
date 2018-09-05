@@ -326,7 +326,8 @@ namespace PWMS.DataClass
         public void RestoreDataBase(string strPath)
         { 
             strPath = strPath.Trim();
-            string sqlConStr = "Data Source=.;Database=master;User id=sa;PWD=2012;Connect Timeout=3";//数据库连接语句
+           string sqlConStr = "Data Source=.;Database=master;User id=sa;PWD=2012;Connect Timeout=3";//数据库连接语句
+           // string sqlConStr = "Data Source=(LocalDB)\\MSSQLLocalDB;Database=master;Trusted_Connection=Yes;Connect Timeout=3";
             SqlConnection sqlCon = new SqlConnection(sqlConStr);//SqlConnection对象
             sqlCon.Open();//数据库连接打开
             //杀掉所有连接 db_PWMS 数据库的进程

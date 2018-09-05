@@ -28,7 +28,8 @@ namespace 大实验
             else if (comboBox.Text == "管理员") sign = "ROOT";//判断用户类型
             if (textName.Text != "" && textPass.Text != ""&&comboBox.Text!="")
             {
-                SqlConnection conn = new SqlConnection("server=.;database=COURSE;Trusted_Connection=Yes;Connect Timeout=90");//Connection对象:连接数据库
+               // SqlConnection conn = new SqlConnection("server=.;database=COURSE;Trusted_Connection=Yes;Connect Timeout=90");//Connection对象:连接数据库
+                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;Database=COURSE;Trusted_Connection=Yes;Connect Timeout=3");//Connection对象:连接数据库
                 conn.Open();//打开数据库连接
                 SqlCommand com = conn.CreateCommand();//Command对象:执行sql语句
                 com.CommandText = "SELECT* FROM " + sign + " WHERE " + sign[0] + "NO=\'" + textName.Text.Trim() + "\' AND " + sign[0] + "PASSWORD=\'" + textPass.Text.Trim() + "\';";//查询密码

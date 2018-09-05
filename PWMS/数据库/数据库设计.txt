@@ -3,7 +3,7 @@ CREATE DATABASE db_PWMS;--建立数据库
 
 --权限模块表
 CREATE TABLE tb_PowerType(TNO INT PRIMARY KEY,--编号
-			Power VARCHAR(20) NOT NULL,);--权限名称
+			Power VARCHAR(20) NOT NULL);--权限名称
 INSERT INTO tb_PowerType VALUES(1,'NationType');--民族类别
 INSERT INTO tb_PowerType VALUES(2,'EducationType');--文化程度
 INSERT INTO tb_PowerType VALUES(3,'PoliticalStatusType');--政治面貌
@@ -33,7 +33,7 @@ INSERT INTO tb_PowerType VALUES(23,'Set');--用户设置
 --省市名称表
 CREATE TABLE tb_NativePlace(TNO INT PRIMARY KEY,--编号
 			Province VARCHAR(20) NOT NULL,--省
-			City VARCHAR(20),);--市
+			City VARCHAR(20));--市
 INSERT INTO tb_NativePlace VALUES(0,'河北省','');
 INSERT INTO tb_NativePlace VALUES(1,'河北省','邢台市');
 INSERT INTO tb_NativePlace VALUES(2,'河北省','保定市');
@@ -45,19 +45,19 @@ INSERT INTO tb_NativePlace VALUES(103,'北京省','海淀区区');
 
 --婚姻类别表
 CREATE TABLE tb_MarriageType(TNO INT PRIMARY KEY,--编号
-			Marriage VARCHAR(20) NOT NULL,);--婚姻类别
+			Marriage VARCHAR(20) NOT NULL);--婚姻类别
 INSERT INTO tb_MarriageType VALUES(1,'已婚');
 INSERT INTO tb_MarriageType VALUES(2,'未婚');
 
 --性别类别表
 CREATE TABLE tb_SexType(TNO INT PRIMARY KEY,--编号
-			Sex VARCHAR(20) NOT NULL,);--性别类别
+			Sex VARCHAR(20) NOT NULL);--性别类别
 INSERT INTO tb_SexType VALUES(1,'男');
 INSERT INTO tb_SexType VALUES(2,'女');
 
 --民族表
 CREATE TABLE tb_NationType(TNO INT PRIMARY KEY,--编号
-			Nation VARCHAR(20) NOT NULL,); --民族
+			Nation VARCHAR(20) NOT NULL); --民族
 INSERT INTO tb_NationType VALUES(8,'汉族');
 INSERT INTO tb_NationType VALUES(11,'苗族');
 INSERT INTO tb_NationType VALUES(14,'朝鲜族');
@@ -65,7 +65,7 @@ INSERT INTO tb_NationType VALUES(19,'满族');
 
 --文化程度表
 CREATE TABLE tb_EducationType(TNO INT PRIMARY KEY,--编号
-			Education VARCHAR(20) NOT NULL,);--文化程度
+			Education VARCHAR(20) NOT NULL);--文化程度
 INSERT INTO tb_EducationType VALUES(4,'大学');
 INSERT INTO tb_EducationType VALUES(5,'高中');
 INSERT INTO tb_EducationType VALUES(6,'大专');
@@ -75,7 +75,7 @@ INSERT INTO tb_EducationType VALUES(9,'本科');
 
 --政治面貌表
 CREATE TABLE tb_PoliticalStatusType(TNO INT PRIMARY KEY,--编号
-			PoliticalStatus VARCHAR(20) NOT NULL,);--政治面貌
+			PoliticalStatus VARCHAR(20) NOT NULL);--政治面貌
 INSERT INTO tb_PoliticalStatusType VALUES(5,'党员');
 INSERT INTO tb_PoliticalStatusType VALUES(6,'团员');
 INSERT INTO tb_PoliticalStatusType VALUES(7,'共产党员');
@@ -83,7 +83,7 @@ INSERT INTO tb_PoliticalStatusType VALUES(8,'普通人');
 
 --职工类别表
 CREATE TABLE tb_StaffType(TNO INT PRIMARY KEY,--编号
-			Staff VARCHAR(20) NOT NULL,);--职工类别
+			Staff VARCHAR(20) NOT NULL);--职工类别
 INSERT INTO tb_StaffType VALUES(4,'普通员工');
 INSERT INTO tb_StaffType VALUES(5,'正式员工');
 INSERT INTO tb_StaffType VALUES(6,'试用员工');
@@ -91,7 +91,7 @@ INSERT INTO tb_StaffType VALUES(7,'实习员工');
 
 --职务类别表
 CREATE TABLE tb_PositionType(TNO INT PRIMARY KEY,--编号
-			Position VARCHAR(20) NOT NULL,);--职务类别
+			Position VARCHAR(20) NOT NULL);--职务类别
 INSERT INTO tb_PositionType VALUES(5,'经理');
 INSERT INTO tb_PositionType VALUES(6,'副经理');
 INSERT INTO tb_PositionType VALUES(7,'部门经理');
@@ -103,7 +103,7 @@ INSERT INTO tb_PositionType VALUES(10,'普通员工');
 
 --工资类别表
 CREATE TABLE tb_SalaryType(TNO INT PRIMARY KEY,--编号
-			Salary VARCHAR(20) NOT NULL,);--工资类别
+			Salary VARCHAR(20) NOT NULL);--工资类别
 INSERT INTO tb_SalaryType VALUES(4,'工资工龄');
 INSERT INTO tb_SalaryType VALUES(5,'固定工资');
 INSERT INTO tb_SalaryType VALUES(6,'浮动工资');
@@ -111,7 +111,7 @@ INSERT INTO tb_SalaryType VALUES(6,'浮动工资');
 
 --部门类别表
 CREATE TABLE tb_DepartmentType(TNO INT PRIMARY KEY,--编号
-			Department VARCHAR(20) NOT NULL,);--部门类别
+			Department VARCHAR(20) NOT NULL);--部门类别
 INSERT INTO tb_DepartmentType VALUES(3,'ASP.NET部门');
 INSERT INTO tb_DepartmentType VALUES(4,'VB部门');
 INSERT INTO tb_DepartmentType VALUES(5,'c#部门');
@@ -122,7 +122,7 @@ INSERT INTO tb_DepartmentType VALUES(8,'Java Web部门');
 
 --职称类别表
 CREATE TABLE tb_TitleType(TNO INT PRIMARY KEY,--编号
-			Title VARCHAR(20) NOT NULL,);--职称类别
+			Title VARCHAR(20) NOT NULL);--职称类别
 INSERT INTO tb_TitleType VALUES(4,'专家');
 INSERT INTO tb_TitleType VALUES(5,'教授');
 INSERT INTO tb_TitleType VALUES(6,'科学家');
@@ -131,7 +131,7 @@ INSERT INTO tb_TitleType VALUES(7,'工程师');
 
 --奖惩类别表
 CREATE TABLE tb_RPType(TNO INT PRIMARY KEY,--编号
-			RP VARCHAR(20) NOT NULL,);--奖惩类别
+			RP VARCHAR(20) NOT NULL);--奖惩类别
 INSERT INTO tb_RPType VALUES(7,'辞退');
 INSERT INTO tb_RPType VALUES(8,'通报批评');
 INSERT INTO tb_RPType VALUES(9,'现金奖励');
@@ -139,7 +139,7 @@ INSERT INTO tb_RPType VALUES(9,'现金奖励');
 
 --记事类别表
 CREATE TABLE tb_RecordType(TNO INT PRIMARY KEY,--编号
-			Record VARCHAR(20) NOT NULL,);--记事类别
+			Record VARCHAR(20) NOT NULL);--记事类别
 INSERT INTO tb_RecordType VALUES(9,'公司事务');
 INSERT INTO tb_RecordType VALUES(10,'人事部事务');
 INSERT INTO tb_RecordType VALUES(11,'技术部事务');
@@ -148,7 +148,7 @@ INSERT INTO tb_RecordType VALUES(11,'技术部事务');
 
 --用户登录表
 CREATE TABLE tb_Login(UserID VARCHAR(5) PRIMARY KEY,--登录账号
-			UserPassword VARCHAR(10) NOT NULL,);--登录密码
+			UserPassword VARCHAR(10) NOT NULL);--登录密码
 INSERT INTO tb_Login VALUES('root','root');
 INSERT INTO tb_Login VALUES('111','111');
 
@@ -159,7 +159,7 @@ CREATE TABLE tb_UserPower(UserID VARCHAR(5),--账号
 			PowerType INT,--权限编号
 			PRIMARY KEY(UserID,PowerType),
 			FOREIGN KEY(UserID) REFERENCES tb_Login(UserID),--账号
-			FOREIGN KEY(PowerType) REFERENCES tb_PowerType(TNO),);--权限编号
+			FOREIGN KEY(PowerType) REFERENCES tb_PowerType(TNO));--权限编号
 INSERT INTO tb_UserPower VALUES('root',1);
 INSERT INTO tb_UserPower VALUES('root',2);
 INSERT INTO tb_UserPower VALUES('root',3);
@@ -225,11 +225,11 @@ CREATE TABLE tb_Staff(ID VARCHAR(5) PRIMARY KEY,--职工编号
 			FOREIGN KEY(TitleType) REFERENCES tb_TitleType(TNO),--职称类型
 			FOREIGN KEY(NativePlace) REFERENCES tb_NativePlace(TNO),--职称类型
 			FOREIGN KEY(SexType) REFERENCES tb_SexType(TNO),--性别
-			FOREIGN KEY(MarriageType) REFERENCES tb_MarriageType(TNO),);--婚姻状况
+			FOREIGN KEY(MarriageType) REFERENCES tb_MarriageType(TNO));--婚姻状况
 
 --个人简介表
 CREATE TABLE tb_Resume(ID VARCHAR(5) PRIMARY KEY,--职工编号
-			Content TEXT,);--内容
+			Content TEXT);--内容
 --家庭关系表
 CREATE TABLE tb_Family(SNO INT PRIMARY KEY,--编号
 			ID VARCHAR(5) NOT NULL,--职工编号
@@ -239,7 +239,7 @@ CREATE TABLE tb_Family(SNO INT PRIMARY KEY,--编号
 			Company VARCHAR(30),--工作单位
 			Position VARCHAR(20),--职务
 			PoliticalStatus VARCHAR(20),--政治面貌
-			Phone VARCHAR(11) ,);--手机号码
+			Phone VARCHAR(11) );--手机号码
 
 --工作简介表
 CREATE TABLE tb_WorkResume(SNO INT PRIMARY KEY,--编号
@@ -248,7 +248,7 @@ CREATE TABLE tb_WorkResume(SNO INT PRIMARY KEY,--编号
 			EndDate DATE ,--结束时间
 			Company VARCHAR(30) ,--工作单位
 			Department VARCHAR(20) ,--部门
-			Position VARCHAR(20) ,);--职务
+			Position VARCHAR(20) );--职务
 --培训表
 CREATE TABLE tb_Train(SNO INT PRIMARY KEY,--编号
 			ID VARCHAR(5) NOT NULL,--职工编号
@@ -259,7 +259,7 @@ CREATE TABLE tb_Train(SNO INT PRIMARY KEY,--编号
 			TrainCompany VARCHAR(30),--培训单位
 			Content VARCHAR(50),--培训内容
 			Charge FLOAT,--培训费用
-			Effect VARCHAR(20),);--培训效果
+			Effect VARCHAR(20));--培训效果
 --奖惩表
 CREATE TABLE tb_RP(SNO INT PRIMARY KEY,--编号
 			ID VARCHAR(5),--职工编号
@@ -267,7 +267,7 @@ CREATE TABLE tb_RP(SNO INT PRIMARY KEY,--编号
 			RPTime DATETIME,--奖惩时间
 			Auditor VARCHAR(10),--批准人
 			Remark VARCHAR(50),--备注
-			FOREIGN KEY(RPType) REFERENCES tb_RPType(TNO),);--奖惩种类
+			FOREIGN KEY(RPType) REFERENCES tb_RPType(TNO));--奖惩种类
 
 
 
@@ -278,19 +278,19 @@ CREATE TABLE tb_Record(ENO INT PRIMARY KEY,--编号
 			RecordType INT,--记事类别
 			Theme VARCHAR(20),--主题
 			Content TEXT,--内容
-			FOREIGN KEY(RecordType) REFERENCES tb_RecordType(TNO),);--记事类别
+			FOREIGN KEY(RecordType) REFERENCES tb_RecordType(TNO));--记事类别
 --通讯录表	
 CREATE TABLE tb_AddressBook(ENO INT PRIMARY KEY,--编号
 			Name VARCHAR(20) NOT NULL,--姓名
 			Sex VARCHAR(4),--性别
 			Phone VARCHAR(11),--联系电话
 			QQ VARCHAR(15),--QQ号
-			Mailbox VARCHAR(30),);--邮箱
+			Mailbox VARCHAR(30));--邮箱
 --用户提示信息表
 CREATE TABLE tb_MessageCue(ENO INT PRIMARY KEY,--编号
 			CueDate INT,--提示时间
 			CueKind INT,--提示种类
-			CueUnlock INT,);--是否提示框
+			CueUnlock INT);--是否提示框
 INSERT INTO tb_MessageCue VALUES(1,4,1,1);
 INSERT INTO tb_MessageCue VALUES(2,2,2,1);
 

@@ -58,8 +58,8 @@ namespace PWMS
                 MessageBox.Show("数据库连接失败","提示",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 if (MessageBox.Show("是否还原默认数据库", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                 {
-                    try
-                    {
+                     try
+                     {
                         //还原默认数据库
                         myDataClass.RestoreDataBase(System.Environment.CurrentDirectory + "\\PWMS默认数据库.bak");
                         MessageBox.Show("数据还原成功！请重启系统", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -75,7 +75,7 @@ namespace PWMS
             }
             txtName.Text = "root";
             txtPassword.Text = "root";
-            btnLogin_Click(sender, e);
+           btnLogin_Click(sender, e);
         }
         #endregion
 

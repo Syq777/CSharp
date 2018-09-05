@@ -1,0 +1,117 @@
+CREATE DATABASE COURSE;--建立数据库
+--学生
+
+CREATE TABLE STUDENT  (	SNO  CHAR(6) PRIMARY KEY,	--学号   
+                     	SNAME CHAR(8) NOT NULL,	--姓名    
+                     	SSEX CHAR(1) CHECK(SSEX IN('M','F')),	--性别  
+                     	SBIRTH DATE ,		--出生年月日
+                     	SNATION  CHAR(20) ,	--民族
+			SMAJOR CHAR(20),	--专业
+			SYEAR  INT CHECK(SYEAR>1990 AND SYEAR<2017),		--入学年份 
+			SCLASS  CHAR(2),	--班级
+ 			SPASSWORD  CHAR(8),	--登录密码			
+                      );  
+INSERT INTO STUDENT VALUES('201501','李勇','M','1997-8-9','汉族','计算机科学与技术','2015','1','201501'); 
+INSERT INTO STUDENT VALUES('201502','刘晨','F','1997-9-2','汉族','计算机科学与技术','2015','2','201502'); 
+INSERT INTO STUDENT VALUES('201503','王敏','F','1997-2-9','汉族','计算机科学与技术','2015','2','201503'); 
+INSERT INTO STUDENT VALUES('201504','张立','M','1997-4-8','维吾尔族','数学','2015','1','201504');
+
+--教师
+CREATE TABLE TEACHER (	TNO  CHAR(4) PRIMARY KEY,	--教师编号
+			TNAME  CHAR(8),	--姓名
+			TSEX  CHAR(1) CHECK(TSEX IN('M','F')),	--性别
+			TPOSITION  CHAR(10),	--职称
+			TPASSWORD  CHAR(8),	--登录密码	
+                      );  
+INSERT INTO TEACHER VALUES('1001','李丹','F','教授','1001'); 
+INSERT INTO TEACHER VALUES('1002','李晶','F','副教授','1002'); 
+INSERT INTO TEACHER VALUES('1003','朱恒','M','讲师','1003'); 
+INSERT INTO TEACHER VALUES('1004','孙文','M','教授','1004'); 
+ 	       	
+		 	   	  	 
+            	
+--课程
+CREATE TABLE COURSE   (	CNO CHAR(2) PRIMARY KEY,	--课程号    
+                      	CNAME CHAR(10) NOT NULL UNIQUE,	--课程名 
+                      	TNO CHAR(4),	--授课教师编号
+			CHOUR  INT ,	--课时 
+			CCREDIT  SMALLINT CHECK(CCREDIT>=1 AND CCREDIT<=5),	--学分(1-5)
+		      	CSTART SMALLINT,--课程开始周数
+			CEND   SMALLINT,--课程结束周数
+                        CONSTRAINT C1 CHECK(CSTART>=1 AND CEND<=17 AND CSTART<=CEND),--周数约束
+			CTIME   SMALLINT  CHECK(CTIME IN('1','2','3','4','5','6','7')),     --上课时间
+  			CNS   	SMALLINT,--开始节数
+			CNE	SMALLINT,--结束节数
+			CONSTRAINT C2 CHECK(CNS>=1 AND CNE<=11 AND CNS<=CNE),--节数约束
+			CPLACE  CHAR(6),	--上课地点
+			FOREIGN KEY(TNO) REFERENCES TEACHER(TNO),
+			); 
+INSERT INTO COURSE VALUES('1','数据库',  '1001','34','3','1','17', '1','3','4','101'); 
+INSERT INTO COURSE VALUES('2','数学',    '1001','34','2','1','17', '1','5','7','102');  
+INSERT INTO COURSE VALUES('3','信息系统','1002','34','4','1','17', '1','1','2','103'); 
+INSERT INTO COURSE VALUES('4','操作系统','1003','34','3','1','17', '2','3','4','104'); 
+INSERT INTO COURSE VALUES('5','数据结构','1004','34','4','1','17', '3','3','4','105'); 
+INSERT INTO COURSE VALUES('6','数据处理','1004','34','2','1','17', '4','5','6','106'); 
+INSERT INTO COURSE VALUES('7','C语言',   '1004','34','4','1','17', '5','3','4','107'); 
+
+
+
+
+--已选课程及成绩
+CREATE TABLE SC(SNO  CHAR(6) NOT NULL,	--学号
+		CNO CHAR(2) NOT NULL,	--课程号                     
+                GRADE SMALLINT CHECK(GRADE>=0 AND GRADE<=100),		--分数 
+                PRIMARY KEY(CNO,SNO), 
+                FOREIGN KEY(SNO) REFERENCES STUDENT(SNO), 
+                FOREIGN KEY(CNO) REFERENCES COURSE(CNO)); 
+INSERT INTO SC VALUES('201501','1',92); 
+INSERT INTO SC VALUES('201501','2',85); 
+INSERT INTO SC VALUES('201501','3',88); 
+INSERT INTO SC VALUES('201502','2',90); 
+INSERT INTO SC VALUES('201502','3',80); 
+
+
+--管理员
+CREATE TABLE ROOT(	RNO  CHAR(4) PRIMARY KEY,--管理员账号
+			RPASSWORD  CHAR(8),--管理员密码
+                     );
+INSERT INTO ROOT VALUES('root','root');
+
+
+
+--触发器
+CREATE TRIGGER  INSERT_COURSE  --对课程表进行插入时激活触发器
+ON COURSE 
+AFTER  INSERT   --AFTER触发事件
+AS 
+BEGIN
+    UPDATE COURSE
+    SET CHOUR=(CEND-CSTART+1)*(CNE-CNS+1)
+    WHERE   CHOUR!=(CEND-CSTART+1)*(CNE-CNS+1);--更新课时使其符合约束
+END;
+
+
+
+
+CREATE TRIGGER  UPDATE_COURSE  --对课程表进行更新时激活触发器
+ON COURSE 
+AFTER  UPDATE   --AFTER触发事件
+AS 
+BEGIN
+   UPDATE COURSE
+   SET CHOUR=(CEND-CSTART+1)*(CNE-CNS+1)
+   WHERE   CHOUR!=(CEND-CSTART+1)*(CNE-CNS+1);--更新课时使其符合约束
+END;
+
+
+
+学生(学号,姓名,性别,出生年月日,民族,专业,入学年份,班级,登录密码)
+STUDENT(SNO,SNAME,SSEX ,SBIRTH,SNATION,SMAJOR,SYEAR ,SCLASS,SPASSWORD)
+教师(教师编号,姓名,性别,职称,登录密码)
+TEACHER(TNO,TNAME,TSEX,TPOSITION,TPASSWORD)	
+课程(课程号,课程名,授课教师编号,课时,学分,课程开始周数,课程结束周数,上课时间,开始节数,结束节数,上课地点)
+COURSE(CNO,CNAME,TNO,CHOUR,CCREDIT,CSTART,CEND,CTIME,CNS,CNE,CPLACE)
+已选课程及成绩(学号,课程号,分数)
+SC(SNO,CNO,GRADE)
+管理员(管理员账号,密码)
+ROOT(RNO,RPASSWORD)
