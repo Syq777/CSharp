@@ -1,0 +1,88 @@
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\bin\Debug\大实验.exe.config
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\bin\Debug\大实验.exe
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\bin\Debug\大实验.pdb
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\obj\Debug\大实验.csprojResolveAssemblyReference.cache
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\obj\Debug\大实验.Form1.resources
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\obj\Debug\大实验.Properties.Resources.resources
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\obj\Debug\大实验.csproj.GenerateResource.Cache
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\obj\Debug\大实验.exe
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\obj\Debug\大实验.pdb
+c:\users\zhuol\documents\visual studio 2015\Projects\大实验\大实验\obj\Debug\大实验.Form2.resources
+C:\Users\ZHUOL\Documents\Visual Studio 2015\Projects\大实验\大实验\obj\Debug\大实验.Form3.resources
+C:\Users\ZHUOL\Documents\Visual Studio 2015\Projects\大实验\大实验\obj\Debug\大实验.Form4.resources
+F:\数据库\大实验\大实验\bin\Debug\大实验.exe.config
+F:\数据库\大实验\大实验\obj\Debug\大实验.exe
+F:\数据库\大实验\大实验\obj\Debug\大实验.pdb
+F:\数据库\大实验\大实验\bin\Debug\大实验.exe
+F:\数据库\大实验\大实验\bin\Debug\大实验.pdb
+F:\数据库\大实验\大实验\obj\Debug\大实验.csprojResolveAssemblyReference.cache
+F:\数据库\大实验\大实验\obj\Debug\大实验.Form1.resources
+F:\数据库\大实验\大实验\obj\Debug\大实验.Form2.resources
+F:\数据库\大实验\大实验\obj\Debug\大实验.Form3.resources
+F:\数据库\大实验\大实验\obj\Debug\大实验.Form4.resources
+F:\数据库\大实验\大实验\obj\Debug\大实验.Properties.Resources.resources
+F:\数据库\大实验\大实验\obj\Debug\大实验.csproj.GenerateResource.Cache
+C:\Users\ZHUOL\Desktop\大实验\大实验\bin\Debug\大实验.exe.config
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.exe
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.pdb
+C:\Users\ZHUOL\Desktop\大实验\大实验\bin\Debug\大实验.exe
+C:\Users\ZHUOL\Desktop\大实验\大实验\bin\Debug\大实验.pdb
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.csprojResolveAssemblyReference.cache
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.Form1.resources
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.Form2.resources
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.Form3.resources
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.Properties.Resources.resources
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.csproj.GenerateResource.Cache
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.Form4.resources
+C:\Users\ZHUOL\Desktop\大实验\大实验\bin\Debug\大实验.exe.manifest
+C:\Users\ZHUOL\Desktop\大实验\大实验\bin\Debug\大实验.application
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.exe.manifest
+C:\Users\ZHUOL\Desktop\大实验\大实验\obj\Debug\大实验.application
+E:\大实验\大实验\bin\Debug\大实验.exe.config
+E:\大实验\大实验\obj\Debug\大实验.exe
+E:\大实验\大实验\obj\Debug\大实验.pdb
+E:\大实验\大实验\bin\Debug\大实验.exe.manifest
+E:\大实验\大实验\bin\Debug\大实验.application
+E:\大实验\大实验\bin\Debug\大实验.exe
+E:\大实验\大实验\bin\Debug\大实验.pdb
+E:\大实验\大实验\obj\Debug\大实验.csprojResolveAssemblyReference.cache
+E:\大实验\大实验\obj\Debug\大实验.Form1.resources
+E:\大实验\大实验\obj\Debug\大实验.Form2.resources
+E:\大实验\大实验\obj\Debug\大实验.Form3.resources
+E:\大实验\大实验\obj\Debug\大实验.Form4.resources
+E:\大实验\大实验\obj\Debug\大实验.Properties.Resources.resources
+E:\大实验\大实验\obj\Debug\大实验.csproj.GenerateResource.Cache
+E:\大实验\大实验\obj\Debug\大实验.exe.manifest
+E:\大实验\大实验\obj\Debug\大实验.application
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\bin\Debug\大实验.exe.config
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.exe
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.pdb
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\bin\Debug\大实验.exe.manifest
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\bin\Debug\大实验.application
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\bin\Debug\大实验.exe
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\bin\Debug\大实验.pdb
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.csprojResolveAssemblyReference.cache
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.Form1.resources
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.Form2.resources
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.Form3.resources
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.Form4.resources
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.Properties.Resources.resources
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.csproj.GenerateResource.Cache
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.exe.manifest
+C:\Users\ZHUOL\Desktop\数据库\实验\大实验\大实验\obj\Debug\大实验.application
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\bin\Debug\大实验.exe.config
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.exe
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.pdb
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\bin\Debug\大实验.exe.manifest
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\bin\Debug\大实验.application
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\bin\Debug\大实验.exe
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\bin\Debug\大实验.pdb
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.csprojResolveAssemblyReference.cache
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.Form1.resources
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.Form2.resources
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.Form3.resources
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.Form4.resources
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.Properties.Resources.resources
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.csproj.GenerateResource.Cache
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.exe.manifest
+E:\文件\大学\学习\已过科目\数据库\实验\大实验\大实验\obj\Debug\大实验.application

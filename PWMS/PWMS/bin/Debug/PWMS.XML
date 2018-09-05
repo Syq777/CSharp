@@ -1,0 +1,1950 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PWMS</name>
+    </assembly>
+    <members>
+        <member name="M:PWMS.DataClass.MyData.GetSqlDataReader(System.String)">
+            <summary>
+            获得SqlDataReader对象
+            </summary>
+            <param name="strSql">SQL语句</param>
+            <returns>SqlDataReader对象</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.GetDataTable(System.String)">
+            <summary>
+            获得DataTable对象
+            </summary>
+            <param name="strSql">SQL语句</param>
+            <returns>DataTable对象</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.ExecuteSqlCommand(System.String)">
+            <summary>
+            执行SqlCommand命令
+            </summary>
+            <param name="strSql">SQL语句</param>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.OpenSqlConnection">
+            <summary>
+            数据库连接 
+            </summary>
+            <retrurns>SqlConnection对象</retrurns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.CloseSqlConnection(System.Data.SqlClient.SqlConnection)">
+             <summary>
+            数据库关闭
+             </summary>
+             <param name="sqlCon">SqlConnection对象</param>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.GetDataSet(System.String)">
+            <summary>
+            获得DataSet对象
+            </summary>
+            <param name="strSql">SQL语句</param>
+            <returns>DataSet对象</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.GetDataSet(System.String,System.String)">
+            <summary>
+            获得DataSet对象
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strField">字段</param>
+            <returns>DataSet对象</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.GetDataSet(System.String,System.String,System.String)">
+            <summary>
+            获得DataSet对象
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strField">字段</param>
+            <param name="condition">条件</param>
+            <returns>DataSet对象</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.IsExistData(System.String)">
+            <summary>
+            判断是否存在数据
+            </summary>
+            <param name="tableName">数据表名</param>
+            <returns>是否存在数据</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.IsExistData(System.String,System.String,System.String)">
+            <summary>
+            判断是否存在数据
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strField">字段</param>
+            <param name="condition">条件</param>
+            <returns>是否存在数据</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.SelectData(System.String,System.String)">
+            <summary>
+            查找数据
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strField">字段</param>
+            <returns>数据表</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.SelectData(System.String,System.String,System.String)">
+            <summary>
+            查找数据
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strField">字段</param>
+            <param name="condition">条件</param>
+            <returns>数据表</returns>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.ExecuteInsertSql(System.String,System.String,System.String)">
+            <summary>
+            执行SQL插入语句
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strField">字段</param>
+            <param name="strValue">值</param>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.ExecuteDeleteSql(System.String)">
+            <summary>
+            执行SQL删除语句
+            </summary>
+            <param name="tableName">数据表名</param>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.ExecuteDeleteSql(System.String,System.String)">
+            <summary>
+            执行SQL删除语句
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="condition">条件</param>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.ExecuteUpdateSql(System.String,System.String)">
+            <summary>
+            执行SQL更新语句
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strFieldValue">设置字段值</param>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.ExecuteUpdateSql(System.String,System.String,System.String)">
+            <summary>
+            执行SQL更新语句
+            </summary>
+            <param name="tableName">数据表名</param>
+            <param name="strFieldValue">设置字段值</param>
+            <param name="condition">条件</param>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.BackupDataBase(System.String)">
+            <summary>
+            备份数据库
+            </summary>
+        </member>
+        <member name="M:PWMS.DataClass.MyData.RestoreDataBase(System.String)">
+            <summary>
+            还原数据库
+            </summary>
+            <param name="strPath">数据库文件路径</param>
+        </member>
+        <member name="T:PWMS.LoginForm">
+            <summary>
+            登录窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.LoginForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.LoginForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="M:PWMS.LoginForm.#ctor">
+            <summary>
+            LoginForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.LoginForm.LoginForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            LoginForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.LoginForm.btnLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnLogin点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.LoginForm.btnClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnClose按钮点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.LoginForm.txtName_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            txtName输入事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.LoginForm.txtPassword_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            txtPassword输入事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.LoginForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.LoginForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.LoginForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.MainForm">
+            <summary>
+            主窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.MainForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.MainForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="M:PWMS.MainForm.LoadFunction">
+            <summary>
+            MainForm初始化函数
+            </summary>
+        </member>
+        <member name="M:PWMS.MainForm.#ctor">
+            <summary>
+            MainForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.MainForm.MainForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            MainForm加载函数
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.MainForm.MainForm_Activated(System.Object,System.EventArgs)">
+            <summary>
+            MainForm激活函数
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.MainForm.treeView_NodeMouseClick(System.Object,System.Windows.Forms.TreeNodeMouseClickEventArgs)">
+            <summary>
+            TreeNode点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.MainForm.tsmi_Click(System.Object,System.EventArgs)">
+            <summary>
+            ToolStripMenuItem事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.MainForm.tsbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            ToolStripButton点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.MainForm.tsbtnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            系统退出事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.MainForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.MainForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PWMS.FunctionClass.MyFunction.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.FunctionClass.MyFunction.loginID">
+            <summary>
+            登录用户ID
+            </summary>
+        </member>
+        <member name="F:PWMS.FunctionClass.MyFunction.loginFlag">
+            <summary>
+            用户登录标志
+            </summary>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.ShowForm(System.String)">
+            <summary>
+            显示窗体
+            </summary>
+            <param name="formName">窗体名称</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.CreateTv(System.Windows.Forms.TreeView,System.Windows.Forms.MenuStrip)">
+            <summary>
+            将MenuStrip控件信息添加到TreeView控件中
+            </summary>
+            <param name="treeView">TreeView控件</param>
+            <param name="menuStrip">MenuStrip控件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.ClickTv(System.Windows.Forms.MenuStrip,System.Windows.Forms.TreeNodeMouseClickEventArgs)">
+            <summary>
+            点击TreeView调用MenuStrip按钮
+            </summary>
+            <param name="menuStrip">MenuStrip控件</param>
+            <param name="e">TreeView点击事件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetMsDisable(System.Windows.Forms.MenuStrip)">
+            <summary>
+            设置MenuStrip不可用
+            </summary>
+            <param name="menuStrip">MenuStrip控件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetMsEnable(System.Windows.Forms.MenuStrip)">
+            <summary>
+            根据权限设置MenuStrip
+            </summary>
+            <param name="menuStrip">MenuStrip控件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.ClearControl(System.Windows.Forms.Control.ControlCollection)">
+            <summary>
+            清空控件集内容
+            </summary>
+            <param name="conCollection">可视化控件集合</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetControlReadOnly(System.Windows.Forms.Control.ControlCollection)">
+            <summary>
+            设置控件集只读
+            </summary>
+            <param name="conCollection">可视化控件集合</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetControlWrite(System.Windows.Forms.Control.ControlCollection)">
+            <summary>
+            设置控件集可编辑
+            </summary>
+            <param name="conCollection">可视化控件集合</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.HideTab(System.Windows.Forms.TabControl)">
+            <summary>
+            隐藏TabControl部分页面
+            </summary>
+            <param name="tabControl">TabControl控件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetMtxData(System.Windows.Forms.MaskedTextBox)">
+            <summary>
+            设置MaskTextBox控件为日期格式
+            </summary>
+            <param name="maskedTextBox">MaskTextBox控件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetMtxTime(System.Windows.Forms.MaskedTextBox)">
+            <summary>
+            设置MaskTextBox控件为时间格式
+            </summary>
+            <param name="maskedTextBox">MaskTextBox控件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.IsDataTime(System.Windows.Forms.MaskedTextBox)">
+            <summary>
+            判断控件内容是否为时间格式
+            </summary>
+            <param name="maskedTextBox">MaskTextBox控件</param>
+            <returns>控件内容是否为时间格式</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetDgv(System.Windows.Forms.DataGridView)">
+            <summary>
+            设置DataGridView控件
+            </summary>
+            <param name="dataGridView">DataGridView控件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.ShowDgvData(System.String,System.Windows.Forms.DataGridView,System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            显示DataGridView数据
+            </summary>
+            <param name="allField">所有字段</param>
+            <param name="dataGridView">DataGridView控件</param>
+            <param name="conCollection">数据对应控件集</param>
+            <param name="prefix">控件名称前缀</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetButton(System.Windows.Forms.Button,System.Windows.Forms.Button,System.Windows.Forms.Button,System.Windows.Forms.Button,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            设置按钮状态
+            </summary>
+            <param name="btn1">1号按钮</param>
+            <param name="btn2">2号按钮</param>
+            <param name="btn3">3号按钮</param>
+            <param name="btn4">4号按钮</param>
+            <param name="bl1">1号按钮状态</param>
+            <param name="bl2">2号按钮状态</param>
+            <param name="bl3">3号按钮状态</param>
+            <param name="bl4">4号按钮状态</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetButton(System.Windows.Forms.Button,System.Windows.Forms.Button,System.Windows.Forms.Button,System.Windows.Forms.Button,System.Windows.Forms.Button,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            设置按钮状态
+            </summary>
+            <param name="btn1">1号按钮</param>
+            <param name="btn2">2号按钮</param>
+            <param name="btn3">3号按钮</param>
+            <param name="btn4">4号按钮</param>
+            <param name="btn5">5号按钮</param>
+            <param name="bl1">1号按钮状态</param>
+            <param name="bl2">2号按钮状态</param>
+            <param name="bl3">3号按钮状态</param>
+            <param name="bl4">4号按钮状态</param>
+            <param name="bl5">5号按钮状态</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.ShowPower(System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            显示用户权限
+            </summary>
+            <param name="conCollection">权限控件集合</param>
+            <param name="userID">用户ID</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetPower(System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            设置用户权限
+            </summary>
+            <param name="conCollection">权限控件集合</param>
+            <param name="userID">用户ID</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.LimitIntKey(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            限制输入整数
+            </summary>
+            <param name="e">键盘输入事件</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.LimitFloatKey(System.Windows.Forms.KeyPressEventArgs,System.String)">
+            <summary>
+            限制输入浮点数
+            </summary>
+            <param name="e">键盘输入事件</param>
+            <param name="str">已输入字符串</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.LimitCharKey(System.Windows.Forms.KeyPressEventArgs,System.String,System.Int32)">
+            <summary>
+            限制输入字符
+            </summary>
+            <param name="e">键盘输入事件</param>
+            <param name="str">已输入字符串</param>
+            <param name="length">限制长度</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.FormatData(System.String)">
+            <summary>
+            格式化日期yyyy-mm-dd
+            </summary>
+            <param name="date">日期</param>
+            <returns>格式化日期</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.FormatTime1(System.String)">
+            <summary>
+            格式化时间hh:mm:ss
+            </summary>
+            <param name="time">时间</param>
+            <returns>格式化时间</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.FormatTime2(System.String)">
+            <summary>
+            格式化时间hh-mm-ss
+            </summary>
+            <param name="time">时间</param>
+            <returns>格式化时间</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.FormatDataTime(System.String)">
+            <summary>
+            格式化DataTime格式yyyy-mm-dd hh:mm:ss
+            </summary>
+            <param name="strDataTime">DataTime字符串</param>
+            <returns>格式化DataTime</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetStaffData(System.String)">
+            <summary>
+            获得职工信息表
+            </summary>
+            <param name="condition">条件</param>
+            <returns>职工信息表数据</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetStaffPhoto(System.String)">
+            <summary>
+            获得指定职工图片
+            </summary>
+            <param name="id">职工ID</param>
+            <returns>职工图片数组</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.UpdateNativePlace(System.String,System.String,System.String)">
+            <summary>
+            更新籍贯信息
+            </summary>
+            <param name="province">籍贯省</param>
+            <param name="city">籍贯市</param>
+            <param name="id">职工ID</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.UserLogin(System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="name">登录名称</param>
+            <param name="password">登录密码</param>
+            <returns>账号密码是否正确</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetAutoNO(System.String,System.String)">
+             <summary>
+            得到字段新编号
+             </summary>
+             <param name="tableName">表单名</param>
+             <param name="NOField">编号字段名</param>
+             <returns>字段新编号</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetAutoID">
+            <summary>
+            获得新员工ID
+            </summary>
+            <returns>新员工ID</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.MessageCue(System.Int32)">
+            <summary>
+            提示信息
+            </summary>
+            <param name="cueKind">提示种类</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetUserPower(System.String)">
+            <summary>
+            获得用户拥有权限
+            </summary>
+            <param name="userID">用户ID</param>
+            <returns>权限列表</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.AddUserPower(System.String,System.String)">
+            <summary>
+            添加用户权限
+            </summary>
+            <param name="userID">用户ID</param>
+            <param name="power">权限名称</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.DeleteUserAllPower(System.String)">
+            <summary>
+            删除用户所有权限
+            </summary>
+            <param name="userID">用户ID</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.ClearDataBase(System.Windows.Forms.Control.ControlCollection)">
+            <summary>
+            清空数据库表
+            </summary>
+            <param name="conCollection">控件集合</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SaveImage(System.String,System.Byte[])">
+            <summary>
+            保存图片到数据库
+            </summary>
+            <param name="id">职员ID</param>
+            <param name="image">图片数组</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetUpdateFieldValue(System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            获得SQL更新字段值
+            </summary>
+            <param name="conCollection">Control集合</param>
+            <param name="prefix">控件前缀</param>
+            <returns>更新内容</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetInsertValue(System.String,System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            获得SQL插入值
+            </summary>
+            <param name="allField">数据表所有字段</param>
+            <param name="conCollection">Control集合</param>
+            <param name="prefix">控件前缀</param>
+            <returns>SQL插入值</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.GetSelectCondition(System.Windows.Forms.Control.ControlCollection,System.String,System.String)">
+            <summary>
+            获得SQL查询条件
+            </summary>
+            <param name="conCollection">Control控件集合</param>
+            <param name="logic">逻辑运算</param>
+            <param name="strSql">查询条件语句</param>
+            <returns>查询条件</returns>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetCityData(System.Windows.Forms.ComboBox,System.String)">
+            <summary>
+            设置城市数据
+            </summary>
+            <param name="comboBox">ComboBox控件</param>
+            <param name="province">省份</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetCmbData(System.Windows.Forms.ComboBox,System.String,System.String)">
+            <summary>
+            设置ComboBox控件数据
+            </summary>
+            <param name="comboBox">ComboBox控件</param>
+            <param name="tableName">数据表</param>
+            <param name="field">对应字段</param>
+        </member>
+        <member name="M:PWMS.FunctionClass.MyFunction.SetControlsData(System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            设置控件集ComboBox数据
+            </summary>
+            <param name="conCollection">控件集</param>
+            <param name="prefix">控件前缀</param>
+        </member>
+        <member name="T:PWMS.ModuleForm.AddressBookAlterForm">
+            <summary>
+            通讯录添加/修改窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookAlterForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookAlterForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookAlterForm.ENO">
+            <summary>
+            记录当前数据编号
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookAlterForm.#ctor">
+            <summary>
+            AddressBookAlterForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookAlterForm.AddressBookAlterForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            AddressBookAlterForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookAlterForm.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSave点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookAlterForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookAlterForm.Int_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            字符输入限制整数数事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookAlterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookAlterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookAlterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.AddressBookForm">
+            <summary>
+            通讯录窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookForm.selectType">
+            <summary>
+            查找种类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookForm.ENO">
+            <summary>
+            数据编号
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.#ctor">
+            <summary>
+            AddressBookForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.AddressBookForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            AddressBookForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.AddressBookForm_Activated(System.Object,System.EventArgs)">
+            <summary>
+            AddressBookForm激活事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.btnSelect_Click(System.Object,System.EventArgs)">
+            <summary>
+            button_select点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.btnAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAll点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.btnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAdd点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.btnAlter_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAlter点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.btnDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnDelete点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.dgvData_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvData_data单元格选中事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.cmbType_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            cmbType文本改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.AddressBookForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.AddressBookForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.BackupRestoreDataForm">
+            <summary>
+            备份/还原数据库窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.BackupRestoreDataForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.BackupRestoreDataForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.#ctor">
+            <summary>
+            BackupRestoreDataForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.btnBackupPath_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnBackupPath点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.btnBackup_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnBackup点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.btnRestorePath_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnRestorePath点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.btnRestore_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnRestore点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.TextBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            TextBox输入字符事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.BackupRestoreDataForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.BackupRestoreDataForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.CueForm">
+            <summary>
+            员工提示信息窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.CueForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.CueForm.#ctor">
+            <summary>
+            CueForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.CueForm.CueForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            CueForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.CueForm.btnSure_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSure点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.CueForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.CueForm.chkCue_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            chkCue控件Checked改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.CueForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.CueForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.CueForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.DeleteDataForm">
+            <summary>
+            清空数据库窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.DeleteDataForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.DeleteDataForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.#ctor">
+            <summary>
+            DeleteDataForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.IsTypeTableChecked">
+            <summary>
+            判断是否选中类别表
+            </summary>
+            <returns>是否选中类别表</returns>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.btnDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnDelete点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">点击</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.chkAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            chkAll点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.checkBox_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            CheckBox控件Checked改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.DeleteDataForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.DeleteDataForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.LookupForm">
+            <summary>
+            人事资料查询窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.LookupForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.LookupForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.LookupForm.sign">
+            <summary>
+            逻辑符号
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.#ctor">
+            <summary>
+            LookupForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.LookupForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            LookupForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.btnAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAll点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.butSelect_Click(System.Object,System.EventArgs)">
+            <summary>
+            butSelect点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.butClear_Click(System.Object,System.EventArgs)">
+            <summary>
+            butClear点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.butQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            butQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.rdoAnd_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            rdoAnd控件Checked改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.rdoOr_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            rdoOr控件Checked改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.no_Province_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            no_Province选项更改事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.mtx_Start_Leave(System.Object,System.EventArgs)">
+            <summary>
+            mtx_Start失去焦点事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.mtx_End_Leave(System.Object,System.EventArgs)">
+            <summary>
+            mtx_End失去焦点事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.Float_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            字符输入限制浮点数事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.Int_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            字符输入限制整数数事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.LookupForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.LookupForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.ManagerForm">
+            <summary>
+            人事档案管理界面
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.ManagerForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.ManagerForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.ManagerForm.SNO">
+            <summary>
+            数据编号
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.ManagerForm.alterAdd">
+            <summary>
+            编辑或添加状态 1为添加 2为编辑 0为查看
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.ManagerForm.selectType">
+            <summary>
+            查询类型
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.ManagerForm.photoByte">
+            <summary>
+            存储图片数组
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.ShowTab">
+            <summary>
+            显示TabControl所有页面
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.SetPageReadOnly">
+            <summary>
+            设置TabPage只读
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.SetPageWrite">
+            <summary>
+            显示TabPage可编辑
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.ClearPage">
+            <summary>
+            清除TabPage显示内容
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.Limitlength">
+            <summary>
+            限制输入框长度
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.#ctor">
+            <summary>
+            ManagerForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.ManagerForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            ManagerForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.ManagerForm_Activated(System.Object,System.EventArgs)">
+            <summary>
+            ManagerForm激活事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAdd点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnAlter_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAlter点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnDelete点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSave点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAll点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnSelect_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSelect点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnPhoto_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnPhoto点击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnFirst_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnFirst点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnPrevious_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnPrevious点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnNext_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnNext点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.btnEnd_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnEnd点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.dgvStaff_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvStaff单元格点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.dgvFamily_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvFamilly单元格点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.dgvWorkResume_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvWorkResume单元格点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.dgvTrain_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvTrain单元格点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.dgvRP_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvRP单元格点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.tabControl_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            tabControl选中页改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.no_Province_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            no_Province选项改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.cboSelectType_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            cboSelectType文本改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.MaskedTextBox_Leave(System.Object,System.EventArgs)">
+            <summary>
+            MaskedTextBox失去焦点事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.stf_ContractE_Leave(System.Object,System.EventArgs)">
+            <summary>
+            stf_ContractE失去焦点事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.work_EndDate_Leave(System.Object,System.EventArgs)">
+            <summary>
+            work_EndDate失去焦点事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.tr_EndTime_Leave(System.Object,System.EventArgs)">
+            <summary>
+            tr_EndTime失去焦点事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.stf_ContractY_Leave(System.Object,System.EventArgs)">
+            <summary>
+            stf_ContractY失去焦点事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.Float_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            字符输入限制浮点数事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.Int_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            字符输入限制整数数事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.ComboBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+             ComboBox输入字符事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.ManagerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.ManagerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.RecordForm">
+            <summary>
+            日常记事窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.RecordForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.RecordForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.RecordForm.ENO">
+            <summary>
+            数据编号
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.RecordForm.alterAdd">
+            <summary>
+            编辑或添加状态 1为添加 2为编辑 0为查看
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.#ctor">
+            <summary>
+            RecordForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.RecordForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            RecordForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.RecordForm_Activated(System.Object,System.EventArgs)">
+            <summary>
+            RecordForm激活事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.btnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAdd点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.btnAlter_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAlter点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.btnDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnDelete点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSave点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.btnAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAll点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">点击</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.btnSelect_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSelect点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.dgvData_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvData单元格选中事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.re_NORecordType_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            re_NORecordType输入字符事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.RecordForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.RecordForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.UserAlterForm">
+            <summary>
+            用户设置添加/修改界面
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserAlterForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserAlterForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserAlterForm.#ctor">
+            <summary>
+            UserAlterForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserAlterForm.UserAlterForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            UserAlterForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserAlterForm.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSave点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserAlterForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserAlterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserAlterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserAlterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.UserForm">
+            <summary>
+            用户设置界面
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserForm.userID">
+            <summary>
+            当前选择用户
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.#ctor">
+            <summary>
+            UserForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.UserForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            UserForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.UserForm_Activated(System.Object,System.EventArgs)">
+            <summary>
+            UserForm激活事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.tsbtnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            tsbtnAdd点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.tsbtnAlter_Click(System.Object,System.EventArgs)">
+            <summary>
+            tsbtnAlter点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.tsbtnDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            tsbtnDelete点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.tsbtnPower_Click(System.Object,System.EventArgs)">
+            <summary>
+            tsbtnPower点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.tsbtnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            tsbtnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.dgvUser_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            dgvUser单元格选中事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.StatisticsForm">
+            <summary>
+            人事资料统计窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.StatisticsForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.StatisticsForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.StatisticsForm.#ctor">
+            <summary>
+            StatisticsForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.StatisticsForm.StatisticsForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            StatisticsForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.StatisticsForm.lstCondition_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            lstConditon选择改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.StatisticsForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.StatisticsForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.StatisticsForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.TypeForm">
+            <summary>
+            基础数据窗体
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.TypeForm.sqlField">
+            <summary>
+            数据库字段
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.TypeForm.myDataClass">
+            <summary>
+            数据库类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.TypeForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.TypeForm.selectedIndex">
+            <summary>
+            ListBox选中项索引
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.#ctor">
+            <summary>
+            TypeForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.TypeForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            TypeForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.btnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAdd点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.btnAlter_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnAlter点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.btnDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnDelete点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            button_quit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.lstData_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            lstData选中项改变
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.TypeForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.TypeForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PWMS.ModuleForm.UserPowerForm">
+            <summary>
+            用户设置权限界面
+            </summary>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserPowerForm.myFunctionClass">
+            <summary>
+            模块函数类
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.#ctor">
+            <summary>
+            UserPowerForm构造函数
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.UserPowerForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            UserPowerForm加载事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnSave点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.btnQuit_Click(System.Object,System.EventArgs)">
+            <summary>
+            btnQuit点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.chkAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            chkAll点击事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.checkBox_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            CheckBox控件Checked改变事件
+            </summary>
+            <param name="sender">控件</param>
+            <param name="e">事件</param>
+        </member>
+        <member name="F:PWMS.ModuleForm.UserPowerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PWMS.ModuleForm.UserPowerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PWMS.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="T:PWMS.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:PWMS.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:PWMS.Properties.Resources.Culture">
+            <summary>
+              覆盖当前线程的 CurrentUICulture 属性
+              使用此强类型的资源类的资源查找。
+            </summary>
+        </member>
+    </members>
+</doc>

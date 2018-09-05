@@ -1,0 +1,58 @@
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe.config
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csprojResolveAssemblyReference.cache
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Form.resources
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Properties.Resources.resources
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csproj.GenerateResource.Cache
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.pdb
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.dll
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.pdb
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.exe
+c:\users\lxz\documents\visual studio 2015\Projects\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.pdb
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe.config
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.exe
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.pdb
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.pdb
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.dll
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.pdb
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csprojResolveAssemblyReference.cache
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Form.resources
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Properties.Resources.resources
+E:\学习\计算机网络\socket\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csproj.GenerateResource.Cache
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe.config
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.exe
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.pdb
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.pdb
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.dll
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.pdb
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csprojResolveAssemblyReference.cache
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Form.resources
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Properties.Resources.resources
+E:\学习\计算机网络\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csproj.GenerateResource.Cache
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe.config
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.exe
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.pdb
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.pdb
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.dll
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.pdb
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csprojResolveAssemblyReference.cache
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Form.resources
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Properties.Resources.resources
+E:\学习\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csproj.GenerateResource.Cache
+E:\学习\结课\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe.config
+E:\学习\结课\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.exe
+E:\学习\结课\计算机网络\实验\完成\实验2\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.pdb
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe.config
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.exe
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.pdb
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.exe
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\bin\Debug\端口扫描器.pdb
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.dll
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\bin\Debug\IP端口扫描器.pdb
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csprojResolveAssemblyReference.cache
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Form.resources
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.Properties.Resources.resources
+C:\file\学习\高级编程\IP端口扫描器\端口扫描器\obj\Debug\端口扫描器.csproj.GenerateResource.Cache

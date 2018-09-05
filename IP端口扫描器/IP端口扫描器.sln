@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IP端口扫描器", "IP端口扫描器\IP端口扫描器.vcxproj", "{DAA96022-754B-4E3F-87E5-CEDFB17643C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "端口扫描器", "端口扫描器\端口扫描器.csproj", "{F887472A-6412-4EE9-96D5-D2B5363E288F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Debug|x64.ActiveCfg = Debug|x64
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Debug|x64.Build.0 = Debug|x64
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Debug|x86.ActiveCfg = Debug|Win32
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Debug|x86.Build.0 = Debug|Win32
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Release|Any CPU.ActiveCfg = Release|Win32
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Release|x64.ActiveCfg = Release|x64
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Release|x64.Build.0 = Release|x64
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Release|x86.ActiveCfg = Release|Win32
+		{DAA96022-754B-4E3F-87E5-CEDFB17643C6}.Release|x86.Build.0 = Release|Win32
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Debug|x64.Build.0 = Debug|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Debug|x86.Build.0 = Debug|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Release|x64.ActiveCfg = Release|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Release|x64.Build.0 = Release|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Release|x86.ActiveCfg = Release|Any CPU
+		{F887472A-6412-4EE9-96D5-D2B5363E288F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
